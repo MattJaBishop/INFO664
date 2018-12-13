@@ -15,7 +15,7 @@ client = Socrata("data.cityofnewyork.us",
 # dictionaries by sodapy.
 results = client.get("9n66-rbk3", limit=10000)
 
-# This bit of code will write the result of the query to output.csv
+# This bit of code will write the result of the query to testoutput.csv
 
 with open('testoutput.csv', 'wb') as fx:
     fx.write(csv)

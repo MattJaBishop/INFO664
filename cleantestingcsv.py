@@ -17,6 +17,6 @@ with open("testinglocations.csv", newline="") as f:
     csvreader = csv.reader(f)
     for row in csvreader:
         i = str(row[30]) #column 31
-        print (i)
+        print (i[0:4]) #returns only first 5 characters of zip code
 #        with open('testinglocations.csv', 'wb') as fx:
 #        fx.write(csv)
