@@ -1,4 +1,4 @@
-# NYC HIV/AIDS Resource Dashboard
+# NYC HIV/AIDS Resources Dashboard
 ## Final Project for Pratt Institute's Programming for Cultural Heritage Course
 
 Project Overview
