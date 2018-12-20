@@ -34,6 +34,8 @@ Tools
 
 - WordPress: A free and open-source content management system (CMS) for hosting web content.
 
+- Sublime Text: Text editor used to create my python scripts.
+
 
 Notes for those running and editing files:
 
