@@ -16,7 +16,9 @@ Data was first pulled from NYC Open Data through a call to the Socrata API. Thre
 
 - DOHMH HIV Service Directory: https://data.cityofnewyork.us/dataset/DOHMH-HIV-Service-Directory/pwts-g83w
 
-Data was next cleaned using the Pandas library through various functions. Once cleaned, new CSV Files were created and then pulled into Microsoft Power BI to be visualized. The completed visualization was then embedded into a WordPress site, which can be found here here: 
+Data was next cleaned using the Pandas library through various functions. Once cleaned, new CSV Files were created and then pulled into Microsoft Power BI to be visualized. The completed visualization was then included as a link on a WordPress site (when I get a paid version of this WordPress site, I will embed it using the iframe plugin), which can be found here here: https://mattjabishop.wordpress.com/2018/12/19/nyc-hiv-aids-service-and-facts-dashboard/
+Link to dashboard: https://app.powerbi.com/view?r=eyJrIjoiZjk1ZjJhODYtODgxOS00NTlkLTllZDUtOWRhZTdlYTkzNzQ4IiwidCI6ImVmYTRjNzcwLTM2NzgtNDA3MS05YWZhLWNjMzFmMDg2MWVkZCIsImMiOjZ9
+(Please note that a proper dashboard title is only included on the WordPress site: my intention was to have it embedded rather than linked, and the linked dashboard would be too small to view with a noticeable title included there.)
 
 
 Tools
