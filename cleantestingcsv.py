@@ -1,22 +1,17 @@
-# import csv
+import pandas as pd
 
-# with open('testinglocations.csv') as csv_file:
-#     csv_reader = csv.reader(csv_file, delimiter=',')
-#     line_count = 0
-#     for row in csv_reader:
-#         if line_count == 0:
-#             print(f'Column names are {", ".join(row)}')
-#             line_count += 1
-#         else:
-#             print(f'\t{row[0]} TEXT {row[1]} TEXT {row[2]}.')
-#             line_count += 1
-#     print(f'Processed {line_count} lines.')
+#Creates function to truncate zip codes to 5 digits:
+def truncate_zip(val):
+    return val[:5]
+data = pd.read_csv('testinglocations.csv', converters={'zip_code': truncate_zip})
 
-import csv
-with open("testinglocations.csv", newline="") as f:
-    csvreader = csv.reader(f)
-    for row in csvreader:
-        i = str(row[30]) #column 31
-        print (i[0:4]) #returns only first 5 characters of zip code
-#        with open('testinglocations.csv', 'wb') as fx:
-#        fx.write(csv)
+#Drops rows with no borough names:
+data = data.dropna(subset=['borough'])
+
+#Renames address column title to street:
+data = data.rename(columns = {'address':'street'})
+
+#Converts first letters of each word to uppercase in borough names:
+data['borough'] = data['borough'].str.title()
+
+data.to_csv('testinglocationsclean.csv', encoding='utf-8')
